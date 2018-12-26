@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
 	int primeCount = 0;
 	int x = 2, i = 2;
 
-	file = fopen("test_file.txt", "w");
+	file = fopen("aufgabe2.txt", "w");
 
 	while(primeCount < 100)
 	{

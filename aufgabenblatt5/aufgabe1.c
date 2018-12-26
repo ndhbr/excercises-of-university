@@ -5,7 +5,7 @@ int main(int argc, char* argv[])
 {
 	FILE *file;
 
-	file = fopen("test_file.txt", "w");
+	file = fopen("hello.txt", "w");
 
 	fprintf(file, "Hello World\n");
 
