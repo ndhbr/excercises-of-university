@@ -15,15 +15,29 @@ int main(int argc, char *argv[])
         printf("nicht vorhanden!\n"); // sollte ausgegeben werden, da es nur 2-mal vorkommt
 
     return 0;
-}
-*/
+}*/
+
 char *suche(char *str, char *such, unsigned int n)
 {
-    int position = 0;
+    int zaehler = 0;
+    char *part = str;
+
+    while(zaehler < n)
+    {
+        part = strstr(part+1, such);
+        
+        if(!part)
+            break;
+    
+        zaehler++;
+    }
+
+    return &part[0];
+
+    /*int position = 0;
     int zaehler = 0;
     int finden = 0;
     size_t such_len = strlen(such);
-
 
     while(str[position] != '\0')
     {
@@ -51,5 +65,5 @@ char *suche(char *str, char *such, unsigned int n)
         position++;
     }
 
-    return NULL;
+    return NULL;*/
 }

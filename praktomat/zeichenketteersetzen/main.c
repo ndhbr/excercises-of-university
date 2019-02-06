@@ -1,15 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
-
-
 char *suche(char *str, char *such, unsigned int n)
 {
     int position = 0;
     int zaehler = 0;
     int finden = 0;
     size_t such_len = strlen(such);
-
 
     while(str[position] != '\0')
     {
