@@ -6,8 +6,12 @@ int sub(int, int);
 int add(int, int);
 
 int main(int argc, char* argv[]) {
-    funktion_ausfuehren(sub, 3, 8);
-    funktion_ausfuehren(add, 3, 8);
+    //funktion_ausfuehren(sub, 3, 8);
+    //funktion_ausfuehren(add, 3, 8);
+    
+    int (*sub_aufrufen)(int, int) = &sub;
+
+    printf("Ausgeben: %d\n", (*sub_aufrufen)(9, 4));
 
     return 0;
 }

@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "tree_functions.c"
+#ifndef _TREE_FUNCTIONS_H
+#include "tree_functions.h"
+#endif
 
 int main(int argc, char* argv[]) {
     int mitte = 0;

@@ -1,3 +1,7 @@
+#ifndef _STDIO_H
+#include <stdio.h>
+#endif
+
 void astreiheAusgeben(int mitte, int breite) {
     int i;
 
